@@ -1,4 +1,4 @@
-# Task Planner (to-do-list application) designed by Kaho Pong
+# Task Planner (to-do-list application)
 
 Thank you for using my task planner.
 
