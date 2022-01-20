@@ -15,16 +15,10 @@ Thank you for using my task planner.
 
 ### `cd Frontend`, `yarn start`
 
-Runs the app in the development mode.  
+Runs the app in the development mode.\  
 Open [https://localhost:3000](https://localhost:3000) to view it in your browser.  
 
 -Create a `.env` file containing the following:   
     REACT_APP_API_SERVER=http://localhost:8080   
     HTTPS=true  
     REACT_APP_FACEBOOK_APP_ID=_your-fb-app-id_  
-
-
-
-
-
-
