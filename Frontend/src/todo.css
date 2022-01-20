@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+/* ====== General ====== */
+
+:root {
+    --color1: #ffafbd;
+    --color2: #ffc3a0;
+    --color3: #2d2d2a;
+    --color4: #d2c9f8;
+    --color5: #c7faf1;
+    --color6: #ffe4d6;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Removing default styles */
+.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+    outline: none;
+    border: none;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--color1), var(--color2));
+    color: var(--color3)
+}
+
+/* nav */
+.nav{
+    width: 70%;
+    margin: 3vh auto 3vh auto;
+}
+
+.nav-tag{
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    padding: 3px 10px;
+    box-shadow: 2px 2px 3px 1px #00000044;
+    cursor: pointer;
+}
+.nav-tag:nth-child(odd){
+    background-color: #d2c9f899;
+}
+.nav-tag:nth-child(even){
+    background-color: #d2c9fbff;
+}
+
+.nav-tag:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+/* title */
+.title h1{
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.title h5{
+    font-size: 18px;
+    line-height: 0.8;
+}
+.title h6{
+    font-size: 12px;
+    line-height: 0.8;
+}
+
+.title.form{
+    margin-top: 30px;
+}
+
+/* cards */
+.cards-container{
+    width: 100%;
+    margin: 4vh auto 2vh auto;
+    background-image: linear-gradient(to right, #ffffff33, #ffffff33);
+    border-radius: 40px;
+}
+
+.todo-card{
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 3px #00000044;
+    position: relative;
+    width: 240px;
+    height: 180px;
+}
+
+.todo-card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.todo-card:nth-child(odd){
+    background-color: #d2c9f899;
+}
+.todo-card:nth-child(even){
+    background-color: #d2c9fbff;
+}
+.todo-card.true{
+    background-color: rgb(133, 133, 133);
+}
+
+.todo-content-container{
+    margin: 28px 5px 0 5px;
+    font-size: 20px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.todo-card .todo-content{
+    overflow: scroll;
+    padding: 0 5px 10px 5px;
+    margin-left: 3px;
+}
+
+.todo-card .edit-input{
+    resize: none;
+    background-color: #ffffff33;
+    font-size: 20px;
+    font-weight: 600;
+    height: 200px;
+    border: none;
+    padding: 0 5px;
+    margin-left: 3px;
+}
+
+.todo-card .todo-content.true{
+    text-decoration: line-through;
+}
+
+.todo-card .btn-container{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0;
+    margin: 0 5px 0px 5px;
+}
+
+
+
+/* cards buttons */
+.del-btn,
+.complete-btn,
+.edit-btn,
+.add-btn{
+    background-color: transparent;
+    font-size: 14px;
+    border-radius: 10px;
+    border: none;
+}
+
+.del-btn:hover,
+.complete-btn:hover,
+.edit-btn:hover,
+.add-btn:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.del-btn{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 140);
+    color: var(--color2);
+    position: absolute;
+    font-weight: 600;
+    top: 8px;
+    left: 8px;
+}
+
+.complete-btn,
+.edit-btn{
+    padding: 2px 8px;
+    box-shadow: 1px 1px 3px 1px #00000044;
+    background-color: rgb(255, 167, 248);
+}
+
+.complete-btn.true,
+.edit-btn.true{
+    background-color: var(--color3);
+    color: white;
+}
+
+/* add todo */
+.add-todo-container{
+    width: 100%;
+}
+.add-input{
+    resize: none;
+    background-color: #ffffff33;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    padding: 5px 10px;
+    margin: 30px 0 30px 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 3px #00000044;
+    position: relative;
+    width: 240px;
+    height: 180px;
+}
+
+.add-input::placeholder{
+    color:#aaaaaa
+}
+
+.add-btn{
+    margin: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    padding: 3px 10px;
+    box-shadow: 2px 2px 3px 1px #00000044;
+    background-color: rgb(255, 167, 248);
+}
+
+/* login form  & signup form*/
+.form-container{
+    /* border: 1px solid red; */
+    width: min(90%, 35rem);
+    margin: 5vh auto 0 auto;
+    padding: 2vh 0 5vh 0;
+    background-image: linear-gradient(to right, #ffffff33, #ffffff33);
+    border-radius: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+}
+
+.element-container{
+    width: 70%;
+    margin: 8px 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.login-btn-container{
+    width: 70%;
+    margin: 30px auto 0 auto;
+    /* border: 1px solid red; */
+}
+
+.element-container h1{
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    padding: 3px 10px;
+    background-color: #d2c9f8;
+    width: min(90%, 10rem);
+    margin: auto;
+    overflow: hidden;
+}
+
+.email-input,
+.pw-input,
+.name-input{
+    background-color: #ffffffaa;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: relative;
+    width: 65%;
+}
+
+.login-btn,
+.signup-btn{
+    border-radius: 10px;
+    border: none;
+    padding: 2px 8px;
+    box-shadow: 1px 1px 3px 1px #00000044;
+    background-color: rgb(255, 167, 248);
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+.login-btn:hover,
+.signup-btn:hover,
+.kep-login-facebook:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.kep-login-facebook{
+    /* border: none; */
+    font-family: inherit !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 2px 8px !important;
+    box-shadow: 1px 1px 3px 1px #00000044;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    margin: 5px !important;
+}
+
+.login-fail-msg,
+.signup-fail-msg{
+    margin: 0px;
+    font-size: 14px;
+    position: absolute;
+    bottom: -30px;
+}
+
+
+
+
+
+
+
