@@ -1,0 +1,16 @@
+// @import "./_partials"
+
+$color1: #fff;
+$color2: #440303;
+
+.body{
+    color: $color2;
+}
+
+%flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
